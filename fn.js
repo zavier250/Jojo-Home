@@ -1,46 +1,64 @@
-// function countDown(time) {
-//     var nowTime = +new Date();
-//     var inputTime = +new Date(time);
-//     var times = (inputTime - nowTime) / 1000; 
-//     var d = parseInt(times / 60 / 60 / 24);
-//     d = d<10 ? '0' + d : d;
-//     var h = parseInt(times / 60 / 60 %24);
-//     h = h<10 ? '0' + h : h;
-//     var m = parseInt(times / 60 % 60);
-//     m = m<10 ? '0' + m : m;
-//     var s = parseInt(times % 60);
-//     s = s<10 ? '0' + s : s;
-//     return d + 'day' + h + 'h' + m  + 'm' + s + 's';
-// }
-// prompt =  console.log(countDown('2022-5-16 18:00:00'));
-// // function reverse (arr) {
-//     var newArr = [];
-//     for (var i = arr.length - 1; i >=0; i--) {
-//         newArr [newArr.length] = arr[i];
-//     }
-//     return newArr;
-// }
-// console.log(reverse([1, 2, 3]));
+// var focus = document.querySelector('.focus');
 
-// var str = 'andy';
-// str.charAt(3)  
-   
-// // 遍历string
+var prev = document.querySelector('.prev');
+var next = document.querySelector('.next');
 
-// for (var i = 0; i< str.length; i++) {
-//     console.loe(str.charAt(i));
-// }
+var slide = document.querySelector('.slide');
+var dot = document.querySelectorAll('.dot');
 
-// var btn = document.querySelector('button');
-// var test = document.querySelector('.designer');
+var index = 0;
+var time;
 
-// btn.onclick = function(){
-//     test.innerHTML = 'And I am a talent';
-// }
-
-var btn = document.querySelector('button');
-var test = document.querySelector('.designer');
-
-btn.onclick = function () {
-    test.innerHTML = 'And I am a talent';
+function position() {
+    slide.style.left = (index * - 100) + "%"
 }
+
+function add() {
+    if (index >= dot.length - 1) {
+        index = 0
+    } else {
+        index++;
+    }
+}
+
+function desc() {
+    if (index < 1) {
+        index = dot.length - 1
+    } else {
+        index--;
+    }
+}
+
+function timer() {
+    time = setInterval(() => {
+        index++;
+        desc();
+        add();
+        position();
+    }, 3000)
+}
+
+prev.addEventListener('click', () => {
+    desc();
+    position();
+    clearInterval(time);
+    timer();
+})
+
+next.addEventListener('click', () => {
+    add();
+    position();
+    clearInterval(time);
+    timer();
+})
+
+for (var i = 0; i < dot.length; i++) {
+    dot[i].addEventListener('click', () => {
+        index = i;
+        position();
+        clearInterval(time);
+        timer();
+    })
+}
+
+timer() 

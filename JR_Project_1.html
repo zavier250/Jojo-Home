@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JoJo</title>
+    <link rel="shortcut icon" href="assets/favicon.ico">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer src="fn.js"></script>
 </head>
 
 <body>
@@ -29,7 +31,7 @@
         <div class="hero_banner">
             <div class="hero_text">
                 <h1>I am Jojo</h1>
-                <p>And I'm a UI/UX Designer</p>
+                <p class="designer">And I'm a UI/UX Designer</p>
                 <button type="button">Hire me</button>
 
                 <div class="socialmedia">
@@ -47,27 +49,139 @@
     </hero>
 
     <section>
-    <div class="aboutarea">
-        <div class="aboutarea_image">
-            <img src="assets/about_img.jpg" alt="Jojo's photo">
-            <div class="aboutarea_image-background">
+        <div class="aboutarea">
+            <div class="aboutarea_image">
+                <img src="assets/about_img.jpg" alt="Jojo's photo">
+                <div class="aboutarea_image-background">
+                </div>
+            </div>
+
+            <div class="aboutarea_intro">
+                <h2>im a ux /ui designer austin based who loves clean, simple & unique design. i also enjoy crafting
+                    brand
+                    identities, icons, & ilustration work.</h2>
+                <p>To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine
+                    told
+                    me what Occidental is. The European languages are members of the same family.English person.</p>
             </div>
         </div>
 
-        <div class="aboutarea_intro">
-            <h2>im a ux /ui designer austin based who loves clean, simple & unique design. i also enjoy crafting brand
-                identities, icons, & ilustration work.</h2>
-            <p>To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told
-                me what Occidental is. The European languages are members of the same family.English person.</p>
+        <div class='services'>
+            <ul>
+                <li>
+                    <img src="assets/ui:ux_design_icon.svg" alt="" class="ui_design filter_green">
+                    <h4>UI/UX DESIGN</h4>
+                    <p>To an English person, it will seem like simplified English, as a skeptical Cambridge friend of
+                        mine told me what...</p>
+                </li>
+                <li>
+                    <img src="assets/web_design_icon.svg" alt="" class="web_design filter_green">
+                    <h4>WEB DESIGN</h4>
+                    <p>To an English person, it will seem like simplified English, as a skeptical Cambridge friend of
+                        mine told me what...</p>
+                </li>
+                <li>
+                    <img src="assets/photography_icon.svg" alt="" class="photography filter_green">
+                    <h4>PHOTOGRAPHY</h4>
+                    <p>To an English person, it will seem like simplified English, as a skeptical Cambridge friend of
+                        mine told me what...</p>
+                </li>
+                <li>
+                    <img src="assets/mobile_apps_icon.svg" alt="" class="mobile filter_green">
+                    <h4>MOBILE APPS</h4>
+                    <p>To an English person, it will seem like simplified English, as a skeptical Cambridge friend of
+                        mine told me what...</p>
+                </li>
+            </ul>
         </div>
-    </div>
-    <div>
-        test test  test
-        <p>test test test</p>
-        
-    </div>
     </section>
 
+    <div class="portfolio">
+        <h1>MY PORTFOLIO</h1>
+        <div class="focus">
+            <!-- left & right button -->
+            <span class="prev"><img src="assets/arrow_prev_icon.png" alt=""></span>
+            <span class="next"><img src="assets/arrow_next_icon.png" alt=""></span>
+
+            <!-- scrolling area -->
+            <ul class="slide">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <!-- dot area -->
+            <ul class="circle">
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="getintouch">
+        <!-- address -->
+        <div class="info_details">
+            <h1>GET IN TOUCH</h1>
+            <p>116 Adelaide Street<br>
+                Brisbane CBD<br>
+                QLD, 4000
+            </p>
+        </div>
+        <!-- form -->
+        <div class="form">
+            <div class="row_1">
+                <input type="text" class = "form_name" placeholder=" YOUR NAME" >
+                <input type="text" class = "form_email" placeholder=" YOUR EMAIL">
+            </div>
+            <div class="row_2">
+                <input type="text" class = "form_subject" placeholder=" SUBJECT">
+            </div>
+            <div class="row_3">
+                <input type="text" class = "form_message" placeholder=" MESSAGE">
+            </div>
+            <div class = "row_4">
+                <input type="submit" class = "form_submit" value = "SEND MESSAGE">
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer_info">
+            <!-- logo -->
+            <img src="assets/Jojo_logo.png" alt="">
+            <!-- contact -->
+            <div class="contact">
+                <div class="email">
+                    <img src="/assets/contact_email_icon.svg" class="filter-green" alt="">
+                    <span>hello@jiangren.com.au</span>
+                </div>
+                <div class="phone">
+                    <img src="assets/contact_phone_icon.svg" class="filter-green" alt="">
+                    <span>0421 672 555</span>
+                </div>
+            </div>
+            <!-- social media -->
+            <div class="socialmedia">
+                <a href="https:www.facebook.com" target="_blank"><img src="assets/facebook.svg" class="filter-grey"
+                        alt=""></a>
+                <a href="https:www.twitter.com" target="_blank"><img src="assets/twitter.svg" class="filter-grey"
+                        alt=""></a>
+                <a href="https:www.linkedin.com" target="_blank"><img src="assets/linkedin.svg" class="filter-grey"
+                        alt=""></a>
+                <a href="https:www.instagram.com" target="_blank"><img src="assets/instagram.svg" class="filter-grey"
+                        alt=""></a>
+            </div>
+        </div>
+        <label class="copyright"> © 2021 All rights reserved.
+        </label>
+
+    </footer>
 
 </body>
 
