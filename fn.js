@@ -62,3 +62,10 @@ for (var i = 0; i < dot.length; i++) {
 }
 
 timer() 
+
+var sticky = document.querySelector ('.sticky');
+
+window.addEventListener('mousemove', function(){
+    sticky.style.display = "block";
+})
+
