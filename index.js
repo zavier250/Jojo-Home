@@ -74,3 +74,5 @@ window.onclick = function (event) {
         }
     }
 }
+
+console.log('hello node')
