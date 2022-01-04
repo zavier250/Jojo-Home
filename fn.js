@@ -1,5 +1,3 @@
-// var focus = document.querySelector('.focus');
-
 var prev = document.querySelector('.prev');
 var next = document.querySelector('.next');
 
@@ -61,11 +59,18 @@ for (var i = 0; i < dot.length; i++) {
     })
 }
 
-timer() 
+timer()
 
-var sticky = document.querySelector ('.sticky');
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
 
-window.addEventListener('mousemove', function(){
-    sticky.style.display = "block";
-})
-
+window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+        }
+    }
+}

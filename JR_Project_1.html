@@ -12,31 +12,42 @@
 </head>
 
 <body>
-    <div class = "top">
-        <a href = "#header" class = "top_button"><img src = "assets/arrow_up_upload_icon.svg"></a>
-    </div>
-    <header class="header" id = "header">
-        <div class="nav_logo">
-            <img src="assets/Jojo_logo.png" class = "logo" alt="logo">
+    <header class="header">
+        <a href="#" class="nav_logo">
+            <img src="assets/Jojo_logo.png" class="logo" alt="logo">
+        </a>
+
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">
+                <img src = "assets/menu_lines_hamburger_icon.svg" alt = "hamburger menu" class = "filter_green">
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="">Home</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
+
         <nav class="navbar">
             <ul class="nav_menu">
                 <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- hero part -->
     <hero>
         <div class="hero_banner">
             <div class="hero_text">
                 <h1>I am Jojo</h1>
                 <p class="designer">And I'm a UI/UX Designer</p>
                 <button type="button">Hire me</button>
-
                 <div class="socialmedia">
                     <a href="https:www.facebook.com" target="_blank"><img src="assets/facebook.svg" class="filter-grey"
                             alt=""></a>
@@ -51,8 +62,9 @@
         </div>
     </hero>
 
+    <!-- about part -->
     <section>
-        <div class="aboutarea">
+        <div class="aboutarea" id="about">
             <div class="aboutarea_image">
                 <img src="assets/about_img.jpg" alt="Jojo's photo">
                 <div class="aboutarea_image-background">
@@ -68,7 +80,6 @@
                     me what Occidental is. The European languages are members of the same family.English person.</p>
             </div>
         </div>
-
         <div class='services'>
             <ul>
                 <li>
@@ -99,7 +110,8 @@
         </div>
     </section>
 
-    <div class="portfolio">
+    <!-- portfolio part -->
+    <div class="portfolio" id="portfolio">
         <h1>MY PORTFOLIO</h1>
         <div class="focus">
             <!-- left & right button -->
@@ -125,38 +137,41 @@
         </div>
     </div>
 
-    <section class="getintouch">
+    <section class="getintouch" id="contact">
         <!-- address -->
-        <div class="info_details">
-            <h1>GET IN TOUCH</h1>
-            <p>116 Adelaide Street<br>
-                Brisbane CBD<br>
-                QLD, 4000
-            </p>
-        </div>
-        <!-- form -->
-        <div class="form">
-            <div class="row_1">
-                <input type="text" class = "form_name" placeholder=" YOUR NAME" >
-                <input type="text" class = "form_email" placeholder=" YOUR EMAIL">
+        <div class="wrapper">
+            <div class="info_details">
+                <h1>GET IN TOUCH</h1>
+                <p>116 Adelaide Street<br>
+                    Brisbane CBD<br>
+                    QLD, 4000
+                </p>
             </div>
-            <div class="row_2">
-                <input type="text" class = "form_subject" placeholder=" SUBJECT">
-            </div>
-            <div class="row_3">
-                <input type="text" class = "form_message" placeholder=" MESSAGE">
-            </div>
-            <div class = "row_4">
-                <input type="submit" class = "form_submit" value = "SEND MESSAGE">
-            </div>
+            <!-- form -->
+            <div class="form">
+                <div class="row_1">
+                    <input type="text" class="form_name" placeholder=" YOUR NAME">
+                    <input type="text" class="form_email" placeholder=" YOUR EMAIL">
+                </div>
+                <div class="row_2">
+                    <input type="text" class="form_subject" placeholder=" SUBJECT">
+                </div>
+                <div class="row_3">
+                    <input type="text" class="form_message" placeholder=" MESSAGE">
+                </div>
+                <div class="row_4">
+                    <input type="submit" class="form_submit" value="SEND MESSAGE">
+                </div>
 
+            </div>
         </div>
     </section>
 
+    <!-- footer part -->
     <footer>
         <div class="footer_info">
             <!-- logo -->
-            <img src="assets/Jojo_logo.png" class = "logo" alt="">
+            <img src="assets/Jojo_logo.png" class="logo" alt="">
             <!-- contact -->
             <div class="contact">
                 <div class="email">
@@ -180,11 +195,9 @@
                         alt=""></a>
             </div>
         </div>
-        <label class="copyright"> © 2021 All rights reserved.
-        </label>
-
+        <div class="copyright"> © 2021 All rights reserved.
+        </div>
     </footer>
-
 </body>
 
 </html>
