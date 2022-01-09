@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrition" content="Professional UI/UX Designer">
+    <meta name="keywords" content="UI Design, UX Design, UI/UX Design, Web Design">
+    <title>JoJo</title>
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <!-- header part -->
+    <header class="header">
+        <a href="#" class="nav_logo">
+            <img src="assets/Jojo_logo.png" class="logo" alt="logo">
+        </a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">
+                <img src = "assets/menu_lines_hamburger_icon.svg" alt = "hamburger menu" class = "filter_green">
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#" class = "home">Home</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul class="nav_menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- hero part -->
+    <hero>
+        <div class="hero_banner">
+            <div class="hero_text">
+                <h1>I am Jojo</h1>
+                <p class="designer">And I'm a UI/UX Designer</p>
+                <button type="button">Hire me</button>
+                <div class="social_media">
+                    <a href="https:www.facebook.com" target="_blank"><img src="assets/facebook.svg" class="filter-grey"
+                            alt="facebook icon"></a>
+                    <a href="https:www.twitter.com" target="_blank"><img src="assets/twitter.svg" class="filter-grey"
+                            alt="twitter icon"></a>
+                    <a href="https:www.linkedin.com" target="_blank"><img src="assets/linkedin.svg" class="filter-grey"
+                            alt="linkedin icon"></a>
+                    <a href="https:www.instagram.com" target="_blank"><img src="assets/instagram.svg"
+                            class="filter-grey" alt="instagram icon"></a>
+                </div>
+            </div>
+        </div>
+    </hero>
+    <!-- about part -->
+    <section>
+        <div class="aboutarea" id="about">
+            <div class="aboutarea_image">
+                <img src="assets/about_img.jpg" alt="Jojo's photo">
+                <div class="background">
+                </div>
+            </div>
+            <div class="aboutarea_intro">
+                <h2>I'm a ux /ui designer austin based who loves clean, simple & unique design. I also enjoy crafting
+                    brand
+                    identities, icons, & ilustration work.</h2>
+                <p>To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine
+                    told
+                    me what Occidental is. The European languages are members of the same family.English person.</p>
+                <button type = "button" class = "resume"><a href = "Chris-Resume.pdf" download="resume">Resume Download</a></button>
+            </div>
+        </div>
+        <div class='services'>
+            <ul>
+                <li>
+                    <img src="assets/ui:ux_design_icon.svg" alt="ui/ux icon" class="ui_design filter_green">
+                    <h4>UI/UX DESIGN</h4>
+                    <p>To an English person, it will seem like simplified English, as a skeptical Cambridge friend of
+                        mine told me what...</p>
+                </li>
+                <li>
+                    <img src="assets/web_design_icon.svg" alt="web icon" class="web_design filter_green">
+                    <h4>WEB DESIGN</h4>
+                    <p>To an English person, it will seem like simplified English, as a skeptical Cambridge friend of
+                        mine told me what...</p>
+                </li>
+                <li>
+                    <img src="assets/photography_icon.svg" alt="photography icon" class="photography filter_green">
+                    <h4>PHOTOGRAPHY</h4>
+                    <p>To an English person, it will seem like simplified English, as a skeptical Cambridge friend of
+                        mine told me what...</p>
+                </li>
+                <li>
+                    <img src="assets/mobile_apps_icon.svg" alt="mobile icon" class="mobile filter_green">
+                    <h4>MOBILE APPS</h4>
+                    <p>To an English person, it will seem like simplified English, as a skeptical Cambridge friend of
+                        mine told me what...</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- portfolio part -->
+    <div class="portfolio" id="portfolio">
+        <h2>MY PORTFOLIO</h2>
+        <div class="focus">
+            <!-- left & right button -->
+            <span class="prev"><img src="assets/arrow_prev_icon.png" alt="previous arrow"></span>
+            <span class="next"><img src="assets/arrow_next_icon.png" alt="next arrow"></span>
+            <!-- scrolling area -->
+            <ul class="slides">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <!-- dot area -->
+            <ul class="circle">
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+            </ul>
+        </div>
+    </div>
+    <section class="getintouch" id="contact">
+        <!-- address -->
+        <div class="wrapper">
+            <div class="info_details">
+                <h2>GET IN TOUCH</h2>
+                <p>116 Adelaide Street<br>
+                    Brisbane CBD<br>
+                    QLD, 4000
+                </p>
+            </div>
+            <!-- form -->
+            <div class="form">
+                <div class="row_1">
+                    <input type="text" class="form_name" placeholder=" YOUR NAME">
+                    <input type="text" class="form_email" placeholder=" YOUR EMAIL">
+                </div>
+                <div class="row_2">
+                    <input type="text" class="form_subject" placeholder=" SUBJECT">
+                </div>
+                <div class="row_3">
+                    <input type="text" class="form_message" placeholder=" MESSAGE">
+                </div>
+                <div class="row_4">
+                    <input type="submit" class="form_submit" value="SEND MESSAGE">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer part -->
+    <footer>
+        <div class="footer_info">
+            <!-- logo -->
+            <img src="assets/Jojo_logo.png" class="logo" alt="jojo's logo">
+            <!-- contact -->
+            <div class="contact">
+                <div class="email">
+                    <img src="/assets/contact_email_icon.svg" class="filter-green" alt="email icon">
+                    <span>hello@jiangren.com.au</span>
+                </div>
+                <div class="phone">
+                    <img src="assets/contact_phone_icon.svg" class="filter-green" alt="phone icon">
+                    <span>0421 672 555</span>
+                </div>
+            </div>
+            <!-- social media -->
+            <div class="social_media">
+                <a href="https:www.facebook.com" target="_blank"><img src="assets/facebook.svg" class="filter-grey"
+                        alt="facebook icon"></a>
+                <a href="https:www.twitter.com" target="_blank"><img src="assets/twitter.svg" class="filter-grey"
+                        alt="twitter icon"></a>
+                <a href="https:www.linkedin.com" target="_blank"><img src="assets/linkedin.svg" class="filter-grey"
+                        alt="linkedin icon"></a>
+                <a href="https:www.instagram.com" target="_blank"><img src="assets/instagram.svg" class="filter-grey"
+                        alt="instagram icon"></a>
+            </div>
+        </div>
+        <div class="copyright"> © 2021 All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
