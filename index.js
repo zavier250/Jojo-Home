@@ -1,14 +1,14 @@
 var prev = document.querySelector('.prev');
 var next = document.querySelector('.next');
 
-var slide = document.querySelector('.slide');
+var slides = document.querySelector('.slides');
 var dot = document.querySelectorAll('.dot');
 
 var index = 0;
 var time;
 
 function position() {
-    slide.style.left = (index * - 100) + "%"
+    slides.style.left = (index * - 100) + "%"
 }
 
 function add() {
@@ -74,5 +74,3 @@ window.onclick = function (event) {
         }
     }
 }
-
-console.log('hello node')
